@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Information Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trainee Information Database</h1>
+        <form id="trainee-form">
+            <div class="form-group">
+                <label for="reg-no">Trainee Registration Number</label>
+                <input type="text" id="reg-no" name="reg-no" required>
+            </div>
+            <div class="form-group">
+                <label for="full-name">Trainee Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="father-name">Father's Name</label>
+                <input type="text" id="father-name" name="father-name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="religion">Religion</label>
+                <input type="text" id="religion" name="religion">
+            </div>
+            <div class="form-group">
+                <label for="subcaste">Sub-caste</label>
+                <input type="text" id="subcaste" name="subcaste">
+            </div>
+            <div class="form-group">
+                <label for="caste">Caste</label>
+                <input type="text" id="caste" name="caste">
+            </div>
+            <div class="form-group">
+                <label for="admission-date">Date of Admission</label>
+                <input type="date" id="admission-date" name="admission-date" required>
+            </div>
+            <div class="form-group">
+                <label for="trade">Trade</label>
+                <input type="text" id="trade" name="trade" required>
+            </div>
+            <div class="form-group">
+                <label for="bank-name">Bank Name</label>
+                <input type="text" id="bank-name" name="bank-name">
+            </div>
+            <div class="form-group">
+                <label for="account-number">Bank Account Number</label>
+                <input type="text" id="account-number" name="account-number">
+            </div>
+            <div class="form-group">
+                <label for="ifsc-code">IFSC Code</label>
+                <input type="text" id="ifsc-code" name="ifsc-code">
+            </div>
+            <div class="form-group">
+                <label for="adhaar-number">Aadhaar Number</label>
+                <input type="text" id="adhaar-number" name="adhaar-number">
+            </div>
+
+            <div class="form-group full-width">
+                <label for="photo">Photo</label>
+                <input type="file" id="photo-input" accept="image/*" style="display: none;">
+                <img id="photo-preview" src="" alt="Trainee Photo Preview" style="max-width: 150px; max-height: 150px; margin-top: 10px;">
+            </div>
+
+            <div class="button-group full-width">
+                <button type="button" id="add-photo-btn">Add Photo</button>
+                <button type="submit" id="add-btn">Add Record</button>
+                <button type="button" id="clear-btn">Clear Form</button>
+                <button type="button" id="modify-btn">Modify Record</button>
+                <button type="button" id="delete-btn">Delete Record</button>
+                <button type="button" id="export-btn">Export to Excel</button>
+                <button type="button" id="print-btn">Print Records</button>
+                <button type="button" id="exit-btn">Exit</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <h2>Trainee Data</h2>
+        <div id="table-wrapper">
+            <table id="trainee-table">
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Registration No.</th>
+                        <th>Full Name</th>
+                        <th>Father's Name</th>
+                        <th>Date of Birth</th>
+                        <th>Address</th>
+                        <th>Religion</th>
+                        <th>Sub-caste</th>
+                        <th>Caste</th>
+                        <th>Admission Date</th>
+                        <th>Trade</th>
+                        <th>Bank Name</th>
+                        <th>Account No.</th>
+                        <th>IFSC Code</th>
+                        <th>Aadhaar No.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
